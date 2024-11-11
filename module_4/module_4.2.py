@@ -1,13 +1,6 @@
-#
-# Создайте новую функцию test_function
-# Создайте внутри test_function другую функцию - inner_function, Эта функция должна печатать значение "Я в области видимости функции test_function"
-# Вызовите функцию inner_function внутри функции test_function
-# Попробуйте вызывать inner_function вне функции test_function и посмотрите на результат выполнения программы
-# Файл с кодом module_4_2.py загрузите на GitHub репозиторий и пришлите ссылку на него.
-
 def test_function():
     def inner_function():
         print('Я в области видимости функции test_function')
-    return inner_function()
+    return inner_function() # только так можно получить доступ к дочерней функции, может в будущем научимся как то еще
 
 test_function()
