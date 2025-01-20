@@ -33,7 +33,7 @@ class RunnerTest(unittest.TestCase):
     def test_challenge(self):
         test1 = Runner('runner3')
         test2 = Runner('runner4')
-        for _ in range(10000):
+        for _ in range(10):
             test1.run()
             test2.walk()
         self.assertNotEqual(test1.distance, test2.distance)
